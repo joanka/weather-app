@@ -1,3 +1,199 @@
-.box {
-    background-color: grey;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Prevents iPhone from resizing in landscape mode  */
+html {
+  -webkit-text-size-adjust: none; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* BODY */
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #666;
+    background-color: #fff; 
+}
+
+.wrapper {
+  border: 1px solid #d4d6d5;
+  width: 800px;
+  height: 370px;
+  margin: 7vh auto;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px #ccc; 
+}
+
+.header {
+  padding: .5rem 0 .5rem 2%;
+  background-color: #30ca9c;
+  color: white;
+  height: 55px;
+}
+
+.header_heading_big {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header_heading_small {
+  font-size: .75rem;
+  font-weight: 400;
+  padding-top: .2rem;
+}
+
+.navigation {
+  padding: 10px 2%;
+  background-color: #539aef;
+  height: 45px;
+}
+
+.navigation_button {
+  width: 100px;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navigation_button-cta {
+  width: 130px; 
+  margin-left: 3%;
+}
+
+.section {
+  background: linear-gradient(#f3f6f9 0%, #d1ddeb 100%);
+  height: 240px;
+  display: flex;
+}
+
+.section_left {
+  width: 50%;
+  text-align: center;
+}
+
+.section_left_location {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f69be;
+}
+
+.section_left_weather {
+  margin-top: .5rem;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.section_left_temperature {
+  margin-top: .75rem;
+  font-size: 5rem;
+  font-weight: 100;
+  color: #1f69be;
+}
+
+.section_left_desc {
+  margin-top: .75rem;  
+  font-size: .9rem;
+  font-weight: 400;
+  padding: 4%;
+}
+
+.section_right {
+  width: 50%;
+  margin-top: 2.2rem;
+  padding-right: 4rem; 
+}
+
+.section_right div {
+  border-bottom: 1px solid rgba(31, 105, 190, 0.2);
+  padding-top: 1.2rem;
+  display: flex;
+  display: -ms-flexbox;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.footer {
+  background-color: #30ca9c;
+  height: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    width: 750px; 
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+  }
+  .section {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .section {
+    flex-direction: column;
+  }
+  .section_left, .section_right {
+    width: 100%;
+  }
+  .section_right {
+    padding-left: 4rem; 
+  }
 }
