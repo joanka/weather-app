@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="header_heading">
+            <h1 class="header_heading_big">Weather App</h1>
+            <h2 class="header_heading_small">JSON data from the Weather Underground</h2>
+        </div>
+        <figure class="header_icon"><img src="img/weather.png" alt="weather-icon"></figure>
+    </header>
+    <nav class="navigation">
+        <select class="navigation_dropdown">
+            <option value="" selected="selected">Wybierz miasto</option>
+            <option value="Gdansk">Gdańsk</option>
+            <option value="Bialystok">Białystok</option>
+            <option value="Warsaw" >Warszawa</option>
+            <option value="Wroclaw">Wrocław</option>
+            <option value="Katowice">Katowice</option>
+        </select>
+    </nav>
+    <main class="section">
+        <section class="section_left">
+            <div class="section_left_location">City UT</div>
+            <div class="section_left_weather">Current Conditions</div>
+            <div class="section_left_temperature">00</div>
+            <div class="section_left_desc">A mix of clouds</div>
+        </section>
+        <section class="section_right">
+            <div>
+                <span class="section_right_r1c1 first"></span>
+                <span class="section_right_r1c2"> <img class="section_right_r1c2i"></span>
+                <span class="section_right_r1c3"></span>
+                <span class="section_right_r1c4"></span>
+            </div>	
+            <div>
+                <span class="section_right_r2c1 first"></span>
+                <span class="section_right_r2c2"> <img class="section_right_r2c2i"></span>
+                <span class="section_right_r2c3"></span>
+                <span class="section_right_r2c4"></span>
+            </div>	
+            <div>
+                <span class="section_right_r3c1 first"></span>
+                <span class="section_right_r3c2"> <img class="section_right_r3c2i"></span>
+                <span class="section_right_r3c3"></span>
+                <span class="section_right_r3c4"></span>
+            </div>	
+        </section>
+    </main>
+    <footer class="footer"></footer>
+</div>
+<script src="boundle.js"></script> 
+</body>
+</html>
