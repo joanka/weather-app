@@ -11,5 +11,3 @@ Run `npm run build` to start project.
 
 Go to `localhost:8080` in your browser.
 
-Run `npm run build:prod` to check the `./dist` folder.
-
